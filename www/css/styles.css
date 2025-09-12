@@ -1,0 +1,50 @@
+/* Estilos para o aplicativo móvel */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .header-nav-container {
+        padding: 10px;
+    }
+    
+    .header-nav-container img {
+        width: 100px;
+    }
+    
+    .header-nav-container ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    .header-nav-container li {
+        margin: 0 5px;
+    }
+    
+    /* Ajustes para cards e imagens */
+    .card {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .card-img-top {
+        height: auto !important;
+    }
+    
+    /* Ajustes para seção de mídia */
+    .media-section {
+        padding: 15px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .media-img-home {
+        height: auto !important;
+        margin-bottom: 20px !important;
+    }
+}
