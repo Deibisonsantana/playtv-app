@@ -10,7 +10,6 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-navigation href="*" />
-
     <platform name="android">
         <preference name="Fullscreen" value="false" />
         <preference name="Orientation" value="portrait" />
@@ -20,18 +19,13 @@
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
-        
-        <!-- Ícone do aplicativo -->
-        <icon src="www/img/icon.png" density="ldpi" />
-        <icon src="www/img/icon.png" density="mdpi" />
-        <icon src="www/img/icon.png" density="hdpi" />
-        <icon src="www/img/icon.png" density="xhdpi" />
-        <icon src="www/img/icon.png" density="xxhdpi" />
-        <icon src="www/img/icon.png" density="xxxhdpi" />
+        <icon density="ldpi" src="www/img/icon.png" />
+        <icon density="mdpi" src="www/img/icon.png" />
+        <icon density="hdpi" src="www/img/icon.png" />
+        <icon density="xhdpi" src="www/img/icon.png" />
+        <icon density="xxhdpi" src="www/img/icon.png" />
+        <icon density="xxxhdpi" src="www/img/icon.png" />
     </platform>
-    
-    <!-- Plugins necessários -->
     <plugin name="cordova-plugin-media" spec="^5.0.0" />
     <plugin name="cordova-plugin-fullscreen" spec="^1.2.0" />
-    <plugin name="cordova-plugin-chromecast" spec="^1.0.0" />
 </widget>
